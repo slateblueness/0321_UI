@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'Hahmlet-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Hahmlet-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Goyang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Goyang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 태그에 대한 디자인 */
+h1 {
+    font-family: 'Hahmlet-Regular';
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+/* 각각 id에 따른 디자인 */
+#clock {
+    text-align: center;
+    font-size: 3rem;
+    margin: 30px 0;
+    color: rgb(59, 79, 147);
+    text-shadow: 0 0 8px rgb(85, 85, 85);
+    /* 블렌드 모드를 이용하여 포토샵의 레이어 효과를 낼 수 있다 */
+    mix-blend-mode: multiply;
+}
+
+#greeting, #login-form, #todo-form {
+    text-align: center;
+}
+
+/* todolist 디자인 */
+#todolist {
+    margin: auto; /* 중앙정렬 */
+    max-width: 400px;
+    margin-top: 20px;
+    padding: 0 30px;
+}
+
+#todolist li {
+    font-family: 'IBMPlexSansKR-Regular';
+    font-size: 1.1rem;
+    clear: both;
+    margin: 5px 0;
+}
+
+#todolist li button {
+    float: right;
+}
+
+#todolist li span {
+    position:absolute;
+    right: 60px;
+    margin-top: 8px;
+    font-size: 0.7rem;
+}
+
+#todolist li button {
+    background-color: transparent;
+    border: solid black 1px;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 2px 5px;
+}
+
+/* input[type="text"], [type="submit"] */
+input[type="text"] {
+    font-family: 'Hahmlet-Regular';
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px white solid;
+    color: rgb(162, 162, 162);
+    font-size: 1.2rem;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+input[type="text"]::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+/* 버튼 디자인 */
+input[type="text"]+input[type="submit"] {
+    background-color: lightgray;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 7px;
+}
+
+/* 버튼에 마우스를 올렸을 때 */
+input[type="text"]+input[type="submit"]:hover {
+    background-color: rgb(191, 128, 240);
+}
+
+.check {
+    color: rgb(170, 168, 168);
+    text-decoration: line-through;
+}
+
+/* 태그를 숨기기 위해 작성 */
+.hidden {
+    display: none;
+}
